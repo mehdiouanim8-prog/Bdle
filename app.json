@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Bundle",
+    "slug": "bundle",
+    "version": "3.0.0",
+    "scheme": "bundle",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bundle.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Bundle uses your location to show verified matches within your chosen discovery distance.",
+        "NSCameraUsageDescription": "Bundle uses the camera for identity and photo verification.",
+        "NSPhotoLibraryUsageDescription": "Bundle uses your photo library so you can choose profile photos."
+      }
+    },
+    "android": {
+      "package": "com.bundle.app",
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "POST_NOTIFICATIONS",
+        "READ_MEDIA_IMAGES"
+      ],
+      "adaptiveIcon": {
+        "backgroundColor": "#08080D",
+        "foregroundImage": "./assets/icon-foreground.png",
+        "monochromeImage": "./assets/icon-foreground.png"
+      }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-secure-store",
+      "expo-notifications",
+      "expo-image-picker",
+      "expo-location",
+      "expo-dev-client",
+      "expo-web-browser",
+      "expo-updates"
+    ],
+    "web": {
+      "output": "static"
+    },
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#08080D",
+      "dark": {
+        "backgroundColor": "#08080D"
+      }
+    },
+    "experiments": {
+      "baseUrl": "/bundle"
+    },
+    "updates": {
+      "enabled": true,
+      "fallbackToCacheTimeout": 0
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    }
+  }
+}
